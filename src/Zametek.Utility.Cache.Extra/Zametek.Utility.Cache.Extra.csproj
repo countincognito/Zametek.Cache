@@ -2,7 +2,7 @@
 	<PropertyGroup>
 		<TargetFramework>netstandard2.0</TargetFramework>
 		<RootNamespace>Zametek.Utility.Cache.Extra</RootNamespace>
-		<Description>Zametek utility caching extras.</Description>
+		<Description>Zametek caching utility extras.</Description>
 		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
 		<Version>0.1.0</Version>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
