@@ -1,4 +1,4 @@
-# Zametek.Utility.Cache
+# Zametek.Cache
 
 [![NuGet Version](https://img.shields.io/nuget/v/Zametek.Utility.Cache.Primitives.svg)](https://www.nuget.org/packages/Zametek.Utility.Cache.Primitives "NuGet Version") **Zametek.Utility.Cache.Primitives**
 
