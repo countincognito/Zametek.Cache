@@ -21,6 +21,6 @@
 
 	<ItemGroup>
 		<PackageReference Include="Zametek.Utility" Version="2.2.0" />
-		<PackageReference Include="Zametek.Utility.Cache.Primitives" Version="0.0.11" />
+		<PackageReference Include="Zametek.Utility.Cache.Primitives" Version="0.1.0" />
 	</ItemGroup>
 </Project>
