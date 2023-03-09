@@ -3,6 +3,7 @@
 	<PropertyGroup>
 		<TargetFramework>netstandard2.0</TargetFramework>
 		<RootNamespace>Zametek.Utility.Cache</RootNamespace>
+		<Description>Zametek utility caching primitives.</Description>
 		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
 		<Version>0.1.0</Version>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
