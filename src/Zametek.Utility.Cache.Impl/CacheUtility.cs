@@ -32,6 +32,7 @@ namespace Zametek.Utility.Cache
 
         #region ICacheUtility Members
 
+        [return: DiagnosticLogging(LogActive.Off)]
         public async Task<GetCachedValueResponse> GetCachedValueAsync(
             GetCachedValueRequest request,
             CancellationToken ct)

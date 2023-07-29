@@ -92,7 +92,7 @@ namespace Zametek.Utility.Cache
             this ICacheUtility cacheUtility,
             string key,
             T value,
-            CancellationToken ct = default) where T : class
+            CancellationToken ct = default)
         {
             await cacheUtility
                 .SetAsync(key, value, null, ct)
@@ -104,7 +104,7 @@ namespace Zametek.Utility.Cache
             string key,
             T value,
             DistributedCacheEntryOptions options,
-            CancellationToken ct = default) where T : class
+            CancellationToken ct = default)
         {
             if (cacheUtility is null)
             {
@@ -114,15 +114,11 @@ namespace Zametek.Utility.Cache
             {
                 throw new ArgumentNullException(nameof(key));
             }
-            if (value is null)
-            {
-                throw new ArgumentNullException(nameof(value));
-            }
 
             var request = new SetCachedValueRequest
             {
                 Key = key,
-                Data = value.ObjectToByteArray(),
+                Data = value?.ObjectToByteArray() ?? Array.Empty<byte>(),
                 Options = options,
             };
 

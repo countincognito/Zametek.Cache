@@ -82,5 +82,24 @@ namespace Zametek.Utility.Cache.Extra.Tests
 
             response.Should().BeNull();
         }
+
+
+
+
+        [Fact]
+        public async Task CacheUtilityExtensions_GivenSetAsync_WhenInputIsNull_ThenEmpty()
+        {
+            ICacheUtility cacheUtility = m_CacheUtilityExtensionsFixture.ServerServices.GetService<ICacheUtility>();
+
+            var key = UniqueString();
+            string? data = null;
+
+            await cacheUtility.SetAsync(key, data);
+            string response = await cacheUtility.GetAsync<string>(key);
+
+            response.Should().BeNull();
+        }
+
+
     }
 }
