@@ -10,7 +10,7 @@ namespace Zametek.Utility.Cache
         public async static Task<T> GetAsync<T>(
             this ICacheUtility cacheUtility,
             string key,
-            CancellationToken ct) where T : class
+            CancellationToken ct = default)
         {
             if (cacheUtility is null)
             {
@@ -34,7 +34,7 @@ namespace Zametek.Utility.Cache
 
             if (data is null)
             {
-                return null;
+                return default;
             }
 
             return data.ByteArrayToObject<T>();
@@ -43,7 +43,7 @@ namespace Zametek.Utility.Cache
         public async static Task RefreshAsync(
             this ICacheUtility cacheUtility,
             string key,
-            CancellationToken ct)
+            CancellationToken ct = default)
         {
             if (cacheUtility is null)
             {
@@ -67,7 +67,7 @@ namespace Zametek.Utility.Cache
         public async static Task DeleteAsync(
             this ICacheUtility cacheUtility,
             string key,
-            CancellationToken ct)
+            CancellationToken ct = default)
         {
             if (cacheUtility is null)
             {
@@ -92,7 +92,7 @@ namespace Zametek.Utility.Cache
             this ICacheUtility cacheUtility,
             string key,
             T value,
-            CancellationToken ct) where T : class
+            CancellationToken ct = default) where T : class
         {
             await cacheUtility
                 .SetAsync(key, value, null, ct)
@@ -104,7 +104,7 @@ namespace Zametek.Utility.Cache
             string key,
             T value,
             DistributedCacheEntryOptions options,
-            CancellationToken ct) where T : class
+            CancellationToken ct = default) where T : class
         {
             if (cacheUtility is null)
             {

@@ -1,6 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Serilog;
-using System;
 using Zametek.Utility.Logging;
 
 namespace Zametek.Utility.Cache.Impl.Tests

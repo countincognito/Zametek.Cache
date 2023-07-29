@@ -5,7 +5,7 @@
 		<RootNamespace>Zametek.Utility.Cache</RootNamespace>
 		<Description>Zametek caching utility implementation.</Description>
 		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-		<Version>0.1.1</Version>
+		<Version>0.1.2</Version>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
 		<Copyright>Copyright (c) 2023 Riccardo M Bennett-Lovsey</Copyright>
 		<PackageProjectUrl>https://github.com/countincognito/Zametek.Cache</PackageProjectUrl>
@@ -27,7 +27,7 @@
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
-		<PackageReference Include="Zametek.Utility.Cache.Primitives" Version="0.1.1" />
+		<PackageReference Include="Zametek.Utility.Cache.Primitives" Version="0.1.2" />
 	</ItemGroup>
 
 </Project>

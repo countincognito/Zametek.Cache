@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zametek.Utility.Cache.Impl"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zametek.Utility.Cache.Impl.Tests", "test\Zametek.Utility.Cache.Impl.Tests\Zametek.Utility.Cache.Impl.Tests.csproj", "{09D4807E-C22B-4E6A-A7C3-3854C784E83A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zametek.Utility.Cache.Extra", "src\Zametek.Utility.Cache.Extra\Zametek.Utility.Cache.Extra.csproj", "{5F8907EC-80E9-4271-87FE-568E5C2F20CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zametek.Utility.Cache.Extra", "src\Zametek.Utility.Cache.Extra\Zametek.Utility.Cache.Extra.csproj", "{5F8907EC-80E9-4271-87FE-568E5C2F20CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zametek.Utility.Cache.Extra.Tests", "test\Zametek.Utility.Cache.Extra.Tests\Zametek.Utility.Cache.Extra.Tests.csproj", "{E4BB6627-8E19-4C07-A140-1990BF0DB1AF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +39,10 @@ Global
 		{5F8907EC-80E9-4271-87FE-568E5C2F20CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F8907EC-80E9-4271-87FE-568E5C2F20CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F8907EC-80E9-4271-87FE-568E5C2F20CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4BB6627-8E19-4C07-A140-1990BF0DB1AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4BB6627-8E19-4C07-A140-1990BF0DB1AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4BB6627-8E19-4C07-A140-1990BF0DB1AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4BB6627-8E19-4C07-A140-1990BF0DB1AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +52,7 @@ Global
 		{E6850F1E-BC7C-4DFA-8BC9-040F26B200A7} = {CA36D157-E780-45A0-847D-E556DB90EE11}
 		{09D4807E-C22B-4E6A-A7C3-3854C784E83A} = {D88D51C8-3504-4840-9ED2-0D04128F5A06}
 		{5F8907EC-80E9-4271-87FE-568E5C2F20CF} = {CA36D157-E780-45A0-847D-E556DB90EE11}
+		{E4BB6627-8E19-4C07-A140-1990BF0DB1AF} = {D88D51C8-3504-4840-9ED2-0D04128F5A06}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {75BC50CD-0DF1-4877-B344-8C382E7F36FE}

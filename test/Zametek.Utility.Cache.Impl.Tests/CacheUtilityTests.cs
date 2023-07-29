@@ -1,8 +1,5 @@
 using FluentAssertions;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Threading.Tasks;
-using Xunit;
 
 namespace Zametek.Utility.Cache.Impl.Tests
 {
