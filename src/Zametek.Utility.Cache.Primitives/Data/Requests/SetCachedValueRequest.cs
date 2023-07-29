@@ -1,6 +1,6 @@
-﻿using Microsoft.Extensions.Caching.Distributed;
+﻿using Destructurama.Attributed;
+using Microsoft.Extensions.Caching.Distributed;
 using System;
-using Zametek.Utility.Logging;
 
 namespace Zametek.Utility.Cache
 {
@@ -9,7 +9,7 @@ namespace Zametek.Utility.Cache
     {
         public string Key { get; set; }
 
-        [NoLogging]
+        [NotLogged]
         public byte[] Data { get; set; }
 
         public DistributedCacheEntryOptions Options { get; set; }

@@ -5,12 +5,12 @@ namespace Zametek.Utility.Cache
 {
     public interface ICacheUtility
     {
-        Task<GetCachedValueResponse> GetCachedValueAsync(GetCachedValueRequest request, CancellationToken ct);
+        Task<GetCachedValueResponse> GetCachedValueAsync(GetCachedValueRequest request, CancellationToken ct = default);
 
-        Task RefreshCachedValueAsync(RefreshCachedValueRequest request, CancellationToken ct);
+        Task RefreshCachedValueAsync(RefreshCachedValueRequest request, CancellationToken ct = default);
 
-        Task DeleteCachedValueAsync(DeleteCachedValueRequest request, CancellationToken ct);
+        Task DeleteCachedValueAsync(DeleteCachedValueRequest request, CancellationToken ct = default);
 
-        Task SetCachedValueAsync(SetCachedValueRequest request, CancellationToken ct);
+        Task SetCachedValueAsync(SetCachedValueRequest request, CancellationToken ct = default);
     }
 }

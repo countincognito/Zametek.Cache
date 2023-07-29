@@ -1,7 +1,7 @@
-﻿using System;
+﻿using Microsoft.Extensions.Caching.Distributed;
+using System;
 using System.Threading;
 using System.Threading.Tasks;
-using Zametek.Utility.Logging;
 
 namespace Zametek.Utility.Cache
 {
@@ -94,6 +94,18 @@ namespace Zametek.Utility.Cache
             T value,
             CancellationToken ct) where T : class
         {
+            await cacheUtility
+                .SetAsync(key, value, null, ct)
+                .ConfigureAwait(false);
+        }
+
+        public async static Task SetAsync<T>(
+            this ICacheUtility cacheUtility,
+            string key,
+            T value,
+            DistributedCacheEntryOptions options,
+            CancellationToken ct) where T : class
+        {
             if (cacheUtility is null)
             {
                 throw new ArgumentNullException(nameof(cacheUtility));
@@ -111,6 +123,7 @@ namespace Zametek.Utility.Cache
             {
                 Key = key,
                 Data = value.ObjectToByteArray(),
+                Options = options,
             };
 
             await cacheUtility

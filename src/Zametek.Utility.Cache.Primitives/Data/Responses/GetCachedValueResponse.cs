@@ -1,12 +1,12 @@
-﻿using System;
-using Zametek.Utility.Logging;
+﻿using Destructurama.Attributed;
+using System;
 
 namespace Zametek.Utility.Cache
 {
     [Serializable]
     public class GetCachedValueResponse
     {
-        [NoLogging]
+        [NotLogged]
         public byte[] Data { get; set; }
     }
 }

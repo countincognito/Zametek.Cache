@@ -5,13 +5,13 @@
 		<RootNamespace>Zametek.Utility.Cache</RootNamespace>
 		<Description>Zametek caching utility implementation.</Description>
 		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-		<Version>0.1.0</Version>
+		<Version>0.1.1</Version>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
 		<Copyright>Copyright (c) 2023 Riccardo M Bennett-Lovsey</Copyright>
 		<PackageProjectUrl>https://github.com/countincognito/Zametek.Cache</PackageProjectUrl>
 		<NeutralLanguage>en-GB</NeutralLanguage>
 		<Authors>countincognito</Authors>
-		<Company>countincognito</Company>
+		<Company />
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -22,13 +22,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="FluentValidation" Version="11.5.1" />
-		<PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="7.0.1">
+		<PackageReference Include="FluentValidation" Version="11.6.0" />
+		<PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="7.0.3">
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
-		<PackageReference Include="Zametek.Utility.Cache.Primitives" Version="0.1.0" />
-		<PackageReference Include="Zametek.Utility.Logging" Version="1.2.0" />
+		<PackageReference Include="Zametek.Utility.Cache.Primitives" Version="0.1.1" />
 	</ItemGroup>
 
 </Project>
